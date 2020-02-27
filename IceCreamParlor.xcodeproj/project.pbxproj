@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBD8912724088A1500F94978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8912624088A1500F94978 /* AppDelegate.swift */; };
+		FBD8912924088A1500F94978 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8912824088A1500F94978 /* SceneDelegate.swift */; };
+		FBD8912B24088A1500F94978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8912A24088A1500F94978 /* ViewController.swift */; };
+		FBD8912E24088A1500F94978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD8912C24088A1500F94978 /* Main.storyboard */; };
+		FBD8913024088A1600F94978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD8912F24088A1600F94978 /* Assets.xcassets */; };
+		FBD8913324088A1700F94978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD8913124088A1700F94978 /* LaunchScreen.storyboard */; };
+		FBD8913E24088A1700F94978 /* IceCreamParlorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8913D24088A1700F94978 /* IceCreamParlorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBD8913A24088A1700F94978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD8911B24088A1500F94978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD8912224088A1500F94978;
+			remoteInfo = IceCreamParlor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBD8912324088A1500F94978 /* IceCreamParlor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamParlor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD8912624088A1500F94978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBD8912824088A1500F94978 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBD8912A24088A1500F94978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBD8912D24088A1500F94978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBD8912F24088A1600F94978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD8913224088A1700F94978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBD8913424088A1700F94978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD8913924088A1700F94978 /* IceCreamParlorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceCreamParlorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD8913D24088A1700F94978 /* IceCreamParlorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamParlorTests.swift; sourceTree = "<group>"; };
+		FBD8913F24088A1700F94978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD8912024088A1500F94978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD8913624088A1700F94978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD8911A24088A1500F94978 = {
+			isa = PBXGroup;
+			children = (
+				FBD8912524088A1500F94978 /* IceCreamParlor */,
+				FBD8913C24088A1700F94978 /* IceCreamParlorTests */,
+				FBD8912424088A1500F94978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD8912424088A1500F94978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8912324088A1500F94978 /* IceCreamParlor.app */,
+				FBD8913924088A1700F94978 /* IceCreamParlorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD8912524088A1500F94978 /* IceCreamParlor */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8912624088A1500F94978 /* AppDelegate.swift */,
+				FBD8912824088A1500F94978 /* SceneDelegate.swift */,
+				FBD8912A24088A1500F94978 /* ViewController.swift */,
+				FBD8912C24088A1500F94978 /* Main.storyboard */,
+				FBD8912F24088A1600F94978 /* Assets.xcassets */,
+				FBD8913124088A1700F94978 /* LaunchScreen.storyboard */,
+				FBD8913424088A1700F94978 /* Info.plist */,
+			);
+			path = IceCreamParlor;
+			sourceTree = "<group>";
+		};
+		FBD8913C24088A1700F94978 /* IceCreamParlorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8913D24088A1700F94978 /* IceCreamParlorTests.swift */,
+				FBD8913F24088A1700F94978 /* Info.plist */,
+			);
+			path = IceCreamParlorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD8912224088A1500F94978 /* IceCreamParlor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD8914224088A1700F94978 /* Build configuration list for PBXNativeTarget "IceCreamParlor" */;
+			buildPhases = (
+				FBD8911F24088A1500F94978 /* Sources */,
+				FBD8912024088A1500F94978 /* Frameworks */,
+				FBD8912124088A1500F94978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IceCreamParlor;
+			productName = IceCreamParlor;
+			productReference = FBD8912324088A1500F94978 /* IceCreamParlor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBD8913824088A1700F94978 /* IceCreamParlorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD8914524088A1700F94978 /* Build configuration list for PBXNativeTarget "IceCreamParlorTests" */;
+			buildPhases = (
+				FBD8913524088A1700F94978 /* Sources */,
+				FBD8913624088A1700F94978 /* Frameworks */,
+				FBD8913724088A1700F94978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD8913B24088A1700F94978 /* PBXTargetDependency */,
+			);
+			name = IceCreamParlorTests;
+			productName = IceCreamParlorTests;
+			productReference = FBD8913924088A1700F94978 /* IceCreamParlorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD8911B24088A1500F94978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Santiago Pelaez Rua";
+				TargetAttributes = {
+					FBD8912224088A1500F94978 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FBD8913824088A1700F94978 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FBD8912224088A1500F94978;
+					};
+				};
+			};
+			buildConfigurationList = FBD8911E24088A1500F94978 /* Build configuration list for PBXProject "IceCreamParlor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD8911A24088A1500F94978;
+			productRefGroup = FBD8912424088A1500F94978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD8912224088A1500F94978 /* IceCreamParlor */,
+				FBD8913824088A1700F94978 /* IceCreamParlorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBD8912124088A1500F94978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD8913324088A1700F94978 /* LaunchScreen.storyboard in Resources */,
+				FBD8913024088A1600F94978 /* Assets.xcassets in Resources */,
+				FBD8912E24088A1500F94978 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD8913724088A1700F94978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD8911F24088A1500F94978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD8912B24088A1500F94978 /* ViewController.swift in Sources */,
+				FBD8912724088A1500F94978 /* AppDelegate.swift in Sources */,
+				FBD8912924088A1500F94978 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD8913524088A1700F94978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD8913E24088A1700F94978 /* IceCreamParlorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBD8913B24088A1700F94978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD8912224088A1500F94978 /* IceCreamParlor */;
+			targetProxy = FBD8913A24088A1700F94978 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBD8912C24088A1500F94978 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBD8912D24088A1500F94978 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBD8913124088A1700F94978 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBD8913224088A1700F94978 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBD8914024088A1700F94978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBD8914124088A1700F94978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBD8914324088A1700F94978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RUUNUA7CTC;
+				INFOPLIST_FILE = IceCreamParlor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapelaezru.IceCreamParlor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBD8914424088A1700F94978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RUUNUA7CTC;
+				INFOPLIST_FILE = IceCreamParlor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapelaezru.IceCreamParlor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBD8914624088A1700F94978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RUUNUA7CTC;
+				INFOPLIST_FILE = IceCreamParlorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapelaezru.IceCreamParlorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceCreamParlor.app/IceCreamParlor";
+			};
+			name = Debug;
+		};
+		FBD8914724088A1700F94978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RUUNUA7CTC;
+				INFOPLIST_FILE = IceCreamParlorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapelaezru.IceCreamParlorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceCreamParlor.app/IceCreamParlor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD8911E24088A1500F94978 /* Build configuration list for PBXProject "IceCreamParlor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD8914024088A1700F94978 /* Debug */,
+				FBD8914124088A1700F94978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD8914224088A1700F94978 /* Build configuration list for PBXNativeTarget "IceCreamParlor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD8914324088A1700F94978 /* Debug */,
+				FBD8914424088A1700F94978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD8914524088A1700F94978 /* Build configuration list for PBXNativeTarget "IceCreamParlorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD8914624088A1700F94978 /* Debug */,
+				FBD8914724088A1700F94978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBD8911B24088A1500F94978 /* Project object */;
+}
