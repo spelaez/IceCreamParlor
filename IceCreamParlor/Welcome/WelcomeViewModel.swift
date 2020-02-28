@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class WelcomeViewModel {
     private var products: [Product] = []
@@ -15,13 +16,19 @@ class WelcomeViewModel {
         return products.count
     }
     
-    private func getProducts() {
-        
+    init() {
+        getProducts()
     }
     
-    func product(at index: Int) -> Product {
+    private func getProducts() {
+        Services.shared.getProducts { [weak self] products in
+            self?.products = products
+        }
+    }
+    
+    func configure(cell: UICollectionViewCell, for index: Int) {
         precondition(index < products.count)
         
-        return products[index]
+        //Configure cell data
     }
 }

@@ -16,6 +16,7 @@
 		FBD8914B2408933C00F94978 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914A2408933C00F94978 /* WelcomeViewController.swift */; };
 		FBD8914D2408944D00F94978 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */; };
 		FBD891502408946600F94978 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914F2408946600F94978 /* Product.swift */; };
+		FBD89153240896B400F94978 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89152240896B400F94978 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		FBD8914A2408933C00F94978 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		FBD8914F2408946600F94978 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FBD89152240896B400F94978 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		FBD8912524088A1500F94978 /* IceCreamParlor */ = {
 			isa = PBXGroup;
 			children = (
+				FBD89151240896A500F94978 /* Network */,
 				FBD8914E2408945D00F94978 /* Models */,
 				FBD891492408931500F94978 /* Order */,
 				FBD891482408930C00F94978 /* Welcome */,
@@ -127,6 +130,14 @@
 				FBD8914F2408946600F94978 /* Product.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FBD89151240896A500F94978 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89152240896B400F94978 /* Services.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD8914B2408933C00F94978 /* WelcomeViewController.swift in Sources */,
+				FBD89153240896B400F94978 /* Services.swift in Sources */,
 				FBD8914D2408944D00F94978 /* WelcomeViewModel.swift in Sources */,
 				FBD891502408946600F94978 /* Product.swift in Sources */,
 				FBD8912724088A1500F94978 /* AppDelegate.swift in Sources */,
