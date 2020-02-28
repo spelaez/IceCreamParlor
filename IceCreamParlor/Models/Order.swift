@@ -26,6 +26,10 @@ class Order {
         self.details = details
     }
     
+    func newOrder() {
+        details.removeAll()
+    }
+    
     func add(product: Product) {
         if let index = details.firstIndex(where: { detail in
             return detail.product.name == product.name

@@ -12,6 +12,7 @@ class OrderViewController: UIViewController {
     
     @IBOutlet weak var orderTotalLabel: UILabel!
     @IBOutlet weak var orderDetailsTableView: UITableView!
+    @IBOutlet weak var newOrderButton: UIButton!
     
     var order: Order!
     
@@ -19,10 +20,19 @@ class OrderViewController: UIViewController {
         super.viewDidLoad()
         
         orderDetailsTableView.dataSource = self
+        configureViews()
+    }
+    
+    func configureViews() {
+        newOrderButton.layer.borderColor = UIColor.white.cgColor
+        newOrderButton.layer.borderWidth = 3
+        
         orderTotalLabel.text = "$\(order.total)"
     }
     
     @IBAction func newOrder(_ sender: Any) {
+        order.newOrder()
+        dismiss(animated: true, completion: nil)
     }
 }
 

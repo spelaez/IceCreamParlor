@@ -165,7 +165,7 @@
                                 <rect key="frame" x="35" y="144" width="344" height="448"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L7v-Db-Wcd">
-                                        <rect key="frame" x="20" y="40" width="304" height="229.5"/>
+                                        <rect key="frame" x="20" y="40" width="304" height="249.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="separatorColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
@@ -196,7 +196,7 @@
                                         </prototypes>
                                     </tableView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vLL-PH-Kh8">
-                                        <rect key="frame" x="20" y="299.5" width="304" height="20.5"/>
+                                        <rect key="frame" x="20" y="319.5" width="304" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6l-Wy-sUt">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
@@ -235,14 +235,14 @@
                                     <constraint firstAttribute="trailing" secondItem="L7v-Db-Wcd" secondAttribute="trailing" constant="20" id="Kme-6c-qZl"/>
                                     <constraint firstItem="L7v-Db-Wcd" firstAttribute="top" secondItem="t9Q-2B-WSE" secondAttribute="top" constant="40" id="QJq-mv-bQz"/>
                                     <constraint firstItem="L7v-Db-Wcd" firstAttribute="leading" secondItem="t9Q-2B-WSE" secondAttribute="leading" constant="20" id="SMc-0h-ieh"/>
-                                    <constraint firstItem="ktn-Yc-OoU" firstAttribute="top" secondItem="vLL-PH-Kh8" secondAttribute="bottom" constant="70" id="Tba-hf-ysS"/>
+                                    <constraint firstItem="ktn-Yc-OoU" firstAttribute="top" secondItem="vLL-PH-Kh8" secondAttribute="bottom" constant="50" id="Tba-hf-ysS"/>
                                     <constraint firstItem="vLL-PH-Kh8" firstAttribute="leading" secondItem="L7v-Db-Wcd" secondAttribute="leading" id="bTx-kd-Hs7"/>
                                     <constraint firstItem="vLL-PH-Kh8" firstAttribute="trailing" secondItem="L7v-Db-Wcd" secondAttribute="trailing" id="dfC-Y7-6xN"/>
                                     <constraint firstAttribute="bottom" secondItem="ktn-Yc-OoU" secondAttribute="bottom" constant="30" id="t9J-zE-lSa"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBi-ln-ewY">
-                                <rect key="frame" x="20" y="762" width="374" height="80"/>
+                                <rect key="frame" x="40" y="762" width="334" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="h3t-C0-ELH"/>
                                 </constraints>
@@ -262,13 +262,14 @@
                             <constraint firstItem="t9Q-2B-WSE" firstAttribute="top" secondItem="Glv-Qr-rVy" secondAttribute="top" constant="100" id="UCT-3U-iGV"/>
                             <constraint firstItem="t9Q-2B-WSE" firstAttribute="height" secondItem="Tft-eO-n7D" secondAttribute="height" multiplier="0.5" id="Zhm-Ob-T8Z"/>
                             <constraint firstItem="Glv-Qr-rVy" firstAttribute="trailing" secondItem="t9Q-2B-WSE" secondAttribute="trailing" constant="35" id="fn2-3n-E4R"/>
-                            <constraint firstItem="Glv-Qr-rVy" firstAttribute="trailing" secondItem="SBi-ln-ewY" secondAttribute="trailing" constant="20" id="vXU-OY-yCV"/>
-                            <constraint firstItem="SBi-ln-ewY" firstAttribute="leading" secondItem="Glv-Qr-rVy" secondAttribute="leading" constant="20" id="xSb-S6-2tn"/>
+                            <constraint firstItem="Glv-Qr-rVy" firstAttribute="trailing" secondItem="SBi-ln-ewY" secondAttribute="trailing" constant="40" id="vXU-OY-yCV"/>
+                            <constraint firstItem="SBi-ln-ewY" firstAttribute="leading" secondItem="Glv-Qr-rVy" secondAttribute="leading" constant="40" id="xSb-S6-2tn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Glv-Qr-rVy"/>
                     </view>
                     <navigationItem key="navigationItem" id="VMa-aa-fZX"/>
                     <connections>
+                        <outlet property="newOrderButton" destination="SBi-ln-ewY" id="Gtt-j7-nnw"/>
                         <outlet property="orderDetailsTableView" destination="L7v-Db-Wcd" id="hUd-lQ-jaF"/>
                         <outlet property="orderTotalLabel" destination="ioY-HB-rXw" id="BBq-Jc-PLB"/>
                     </connections>

@@ -33,7 +33,6 @@ class WelcomeViewController: UIViewController {
         let destination = segue.destination as? OrderViewController
         destination?.order = model.order
     }
-
 }
 
 extension WelcomeViewController: UICollectionViewDataSource {
