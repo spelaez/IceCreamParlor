@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class WelcomeViewModel {
+    private var products: [Product] = []
+    
+    var productCount: Int {
+        return products.count
+    }
+    
+    private func getProducts() {
+        
+    }
+    
+    func product(at index: Int) -> Product {
+        precondition(index < products.count)
+        
+        return products[index]
+    }
+}
