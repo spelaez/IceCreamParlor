@@ -127,7 +127,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="reviewOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZI-Ss-xUE"/>
                                     <segue destination="jWy-mY-5fO" kind="presentation" identifier="order" modalPresentationStyle="overFullScreen" id="U5N-5r-m1o"/>
                                 </connections>
                             </button>
@@ -154,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="SEg-C6-Wc3">
             <objects>
-                <viewController id="jWy-mY-5fO" sceneMemberID="viewController">
+                <viewController id="jWy-mY-5fO" customClass="OrderViewController" customModule="IceCreamParlor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tft-eO-n7D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,6 +250,9 @@
                                 <state key="normal" title="START NEW ORDER">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="newOrder:" destination="jWy-mY-5fO" eventType="touchUpInside" id="ach-yx-3HO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.80784313730000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -266,6 +268,10 @@
                         <viewLayoutGuide key="safeArea" id="Glv-Qr-rVy"/>
                     </view>
                     <navigationItem key="navigationItem" id="VMa-aa-fZX"/>
+                    <connections>
+                        <outlet property="orderDetailsTableView" destination="L7v-Db-Wcd" id="hUd-lQ-jaF"/>
+                        <outlet property="orderTotalLabel" destination="ioY-HB-rXw" id="BBq-Jc-PLB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GU6-2U-b5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
