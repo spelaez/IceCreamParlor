@@ -16,19 +16,17 @@ class WelcomeViewModel {
         return products.count
     }
     
-    init() {
-        getProducts()
-    }
-    
-    private func getProducts() {
+    func getProducts(completionHandler: @escaping (Bool) -> Void) {
         Services.shared.getProducts { [weak self] products in
             self?.products = products
+            completionHandler(true)
         }
     }
     
     func configure(cell: UICollectionViewCell, for index: Int) {
         precondition(index < products.count)
         
-        //Configure cell data
+        let product = products[index]
+        
     }
 }
