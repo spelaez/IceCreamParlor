@@ -23,10 +23,14 @@ class WelcomeViewModel {
         }
     }
     
-    func configure(cell: UICollectionViewCell, for index: Int) {
+    func configure(cell: ProductCollectionViewCell, for index: Int) {
         precondition(index < products.count)
         
         let product = products[index]
         
+        cell.nameLabel.text = product.name
+        cell.productImageView.image = UIImage(named: product.type)
+        cell.priceLabel.text = product.price
+        cell.productImageView.backgroundColor = UIColor.systemBlue
     }
 }

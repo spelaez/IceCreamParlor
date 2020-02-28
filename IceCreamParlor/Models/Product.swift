@@ -21,20 +21,4 @@ class Product: Decodable {
     let price: String
     let color: String
     let type: String
-//
-//    required init(from decoder: Decoder) throws {
-//        do {
-//            let container = try decoder.container(keyedBy: CodingKeys.self)
-//
-//            let name = try container.decode(String.self, forKey: .name)
-//            let price = try container.decode(String.self, forKey: .price)
-//            let color = try container.decode(String.self, forKey: .color)
-//            let type = try container.decode(String.self, forKey: .type)
-//
-//            self.name = name
-//            self.price = price
-//            self.color = color
-//            self.type = type
-//        }
-//    }
 }

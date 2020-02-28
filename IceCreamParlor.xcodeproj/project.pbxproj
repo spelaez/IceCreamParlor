@@ -17,6 +17,7 @@
 		FBD8914D2408944D00F94978 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */; };
 		FBD891502408946600F94978 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914F2408946600F94978 /* Product.swift */; };
 		FBD89153240896B400F94978 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89152240896B400F94978 /* Services.swift */; };
+		FBD8915724089F8C00F94978 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8915624089F8C00F94978 /* ProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		FBD8914F2408946600F94978 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FBD89152240896B400F94978 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		FBD8915624089F8C00F94978 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				FBD8914A2408933C00F94978 /* WelcomeViewController.swift */,
 				FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */,
+				FBD8915624089F8C00F94978 /* ProductCollectionViewCell.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				FBD8914B2408933C00F94978 /* WelcomeViewController.swift in Sources */,
 				FBD89153240896B400F94978 /* Services.swift in Sources */,
+				FBD8915724089F8C00F94978 /* ProductCollectionViewCell.swift in Sources */,
 				FBD8914D2408944D00F94978 /* WelcomeViewModel.swift in Sources */,
 				FBD891502408946600F94978 /* Product.swift in Sources */,
 				FBD8912724088A1500F94978 /* AppDelegate.swift in Sources */,

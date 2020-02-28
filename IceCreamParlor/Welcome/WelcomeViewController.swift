@@ -58,11 +58,13 @@ extension WelcomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath)
-        model.configure(cell: cell, for: indexPath.item)
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as? ProductCollectionViewCell {
+            model.configure(cell: cell, for: indexPath.item)
+            
+            return cell
+        }
         
-        return cell
+        return ProductCollectionViewCell()
     }
-    
     
 }
