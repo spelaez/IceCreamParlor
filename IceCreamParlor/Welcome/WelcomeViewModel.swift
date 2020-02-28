@@ -32,12 +32,27 @@ class WelcomeViewModel: NSObject {
         cell.nameLabel.text = product.name
         cell.productImageView.image = UIImage(named: product.type)
         cell.priceLabel.text = product.price
-        cell.imageBackgroundView.backgroundColor = UIColor.systemBlue
+        cell.imageBackgroundView.backgroundColor = colorForProductType(product.type)
     }
     
-    func addProductToOrder(at index: Int) {
+    func addProductToOrder(at index: Int) -> Int {
         let product = products[index]
-        
-        order.add(product: product)
+        return order.add(product: product)
+    }
+    
+    func colorForProductType(_ type: String) -> UIColor {
+        switch type {
+        case "popsicle":
+            return UIColor.systemPink
+        case "sundae":
+            return UIColor.systemGreen
+        case "froyo":
+            return UIColor.orange
+        case "cone":
+            return UIColor.systemBlue
+        default:
+            return UIColor.cyan
+            
+        }
     }
 }

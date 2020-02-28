@@ -25,7 +25,7 @@ class Order {
     var totalItems: Int {
         var total = 0
         
-        for (product, quantity) in details {
+        for (_, quantity) in details {
             total += quantity
         }
         
@@ -40,17 +40,20 @@ class Order {
         details.removeAll()
     }
     
-    func add(product: Product) {
+    func add(product: Product) -> Int {
         if let index = details.firstIndex(where: { detail in
             return detail.product.name == product.name
         }) {
             if details[index].quantity == 2 {
                 details.remove(at: index)
+                return 0
             } else {
                 details[index].quantity += 1
+                return 2
             }
         } else {
             details.append((product, 1))
+            return 1
         }
     }
 }

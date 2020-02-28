@@ -37,7 +37,7 @@ class WelcomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? OrderViewController
-        destination?.order = model.order
+        destination?.model = OrderViewModel(order: model.order)
     }
 }
 

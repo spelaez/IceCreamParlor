@@ -14,7 +14,7 @@ class OrderViewController: UIViewController {
     @IBOutlet weak var orderDetailsTableView: UITableView!
     @IBOutlet weak var newOrderButton: UIButton!
     
-    var order: Order!
+    var model: OrderViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,25 +27,23 @@ class OrderViewController: UIViewController {
         newOrderButton.layer.borderColor = UIColor.white.cgColor
         newOrderButton.layer.borderWidth = 3
         
-        orderTotalLabel.text = "$\(order.total)"
+        orderTotalLabel.text = "$\(model.order.total)"
     }
     
     @IBAction func newOrder(_ sender: Any) {
-        order.newOrder()
+        model.order.newOrder()
         dismiss(animated: true, completion: nil)
     }
 }
 
 extension OrderViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return order.details.count
+        return model.order.details.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
-        
-        cell.textLabel?.text = order.details[indexPath.row].product.name
-        cell.detailTextLabel?.text = order.details[indexPath.row].product.price
+        model.configure(cell: cell, at: indexPath.row)
         
         return cell
     }

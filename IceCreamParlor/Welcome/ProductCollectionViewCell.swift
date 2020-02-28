@@ -18,8 +18,19 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         imageBackgroundView.layer.cornerRadius = imageBackgroundView.frame.height / 2
+        resetBorder()
+    }
+    
+    func highlightBorder(with quantity: Int) {
+        containerView.layer.borderColor = UIColor.cyan.cgColor
+        containerView.layer.borderWidth = 3.0
+    }
+    
+    func resetBorder(){
         containerView.layer.borderColor = UIColor.lightGray.cgColor
         containerView.layer.borderWidth = 1.0
+        self.layoutIfNeeded()
+        self.layoutSubviews()
     }
     
 }
