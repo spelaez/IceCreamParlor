@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		FBD8912724088A1500F94978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8912624088A1500F94978 /* AppDelegate.swift */; };
 		FBD8912924088A1500F94978 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8912824088A1500F94978 /* SceneDelegate.swift */; };
-		FBD8912B24088A1500F94978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8912A24088A1500F94978 /* ViewController.swift */; };
 		FBD8912E24088A1500F94978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD8912C24088A1500F94978 /* Main.storyboard */; };
 		FBD8913024088A1600F94978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD8912F24088A1600F94978 /* Assets.xcassets */; };
 		FBD8913324088A1700F94978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD8913124088A1700F94978 /* LaunchScreen.storyboard */; };
 		FBD8913E24088A1700F94978 /* IceCreamParlorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8913D24088A1700F94978 /* IceCreamParlorTests.swift */; };
+		FBD8914B2408933C00F94978 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914A2408933C00F94978 /* WelcomeViewController.swift */; };
+		FBD8914D2408944D00F94978 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */; };
+		FBD891502408946600F94978 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8914F2408946600F94978 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,6 @@
 		FBD8912324088A1500F94978 /* IceCreamParlor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamParlor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD8912624088A1500F94978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD8912824088A1500F94978 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBD8912A24088A1500F94978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBD8912D24088A1500F94978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD8912F24088A1600F94978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD8913224088A1700F94978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		FBD8913924088A1700F94978 /* IceCreamParlorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceCreamParlorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD8913D24088A1700F94978 /* IceCreamParlorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamParlorTests.swift; sourceTree = "<group>"; };
 		FBD8913F24088A1700F94978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD8914A2408933C00F94978 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		FBD8914F2408946600F94978 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,11 @@
 		FBD8912524088A1500F94978 /* IceCreamParlor */ = {
 			isa = PBXGroup;
 			children = (
+				FBD8914E2408945D00F94978 /* Models */,
+				FBD891492408931500F94978 /* Order */,
+				FBD891482408930C00F94978 /* Welcome */,
 				FBD8912624088A1500F94978 /* AppDelegate.swift */,
 				FBD8912824088A1500F94978 /* SceneDelegate.swift */,
-				FBD8912A24088A1500F94978 /* ViewController.swift */,
 				FBD8912C24088A1500F94978 /* Main.storyboard */,
 				FBD8912F24088A1600F94978 /* Assets.xcassets */,
 				FBD8913124088A1700F94978 /* LaunchScreen.storyboard */,
@@ -97,6 +103,30 @@
 				FBD8913F24088A1700F94978 /* Info.plist */,
 			);
 			path = IceCreamParlorTests;
+			sourceTree = "<group>";
+		};
+		FBD891482408930C00F94978 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8914A2408933C00F94978 /* WelcomeViewController.swift */,
+				FBD8914C2408944D00F94978 /* WelcomeViewModel.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		FBD891492408931500F94978 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		FBD8914E2408945D00F94978 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8914F2408946600F94978 /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD8912B24088A1500F94978 /* ViewController.swift in Sources */,
+				FBD8914B2408933C00F94978 /* WelcomeViewController.swift in Sources */,
+				FBD8914D2408944D00F94978 /* WelcomeViewModel.swift in Sources */,
+				FBD891502408946600F94978 /* Product.swift in Sources */,
 				FBD8912724088A1500F94978 /* AppDelegate.swift in Sources */,
 				FBD8912924088A1500F94978 /* SceneDelegate.swift in Sources */,
 			);
