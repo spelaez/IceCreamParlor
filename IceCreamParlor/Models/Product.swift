@@ -21,4 +21,11 @@ class Product: Decodable {
     let price: String
     let color: String
     let type: String
+    
+    var priceNumber: Double {
+        var priceToConvert = price
+        priceToConvert.remove(at: priceToConvert.startIndex)
+        
+        return Double(priceToConvert) ?? 0.0
+    }
 }

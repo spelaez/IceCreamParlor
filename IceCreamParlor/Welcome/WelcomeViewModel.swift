@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-class WelcomeViewModel {
+class WelcomeViewModel: NSObject {
     private var products: [Product] = []
+    private(set) var order = Order(details: [])
     
     var productCount: Int {
         return products.count
@@ -32,5 +33,13 @@ class WelcomeViewModel {
         cell.productImageView.image = UIImage(named: product.type)
         cell.priceLabel.text = product.price
         cell.imageBackgroundView.backgroundColor = UIColor.systemBlue
+    }
+}
+
+extension WelcomeViewModel: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let product = products[indexPath.item]
+        
+        order.add(product: product)
     }
 }
