@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class Product: Decodable {
+class Product: NSObject, Decodable {
     let name: String
     let price: Double
-    let color: UIColor
+    let color: String
     let type: String
     
-    init(name: String, price: Double, color: UIColor, type: String) {
+    init(name: String, price: Double, color: String, type: String) {
         self.name = name
         self.price = price
         self.color = color
