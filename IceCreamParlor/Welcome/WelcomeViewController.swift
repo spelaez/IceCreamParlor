@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         model = WelcomeViewModel()
-        productsCollectionView.delegate = model
+        productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
         
         
@@ -32,6 +32,13 @@ class WelcomeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? OrderViewController
         destination?.order = model.order
+    }
+}
+
+extension WelcomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        model.addProductToOrder(at: indexPath.item)
+        reviewOrderButton.setTitle("ORDER \(model.order.totalItems) ITEM(S)", for: .normal)
     }
 }
 

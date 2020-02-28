@@ -22,6 +22,16 @@ class Order {
         return price
     }
     
+    var totalItems: Int {
+        var total = 0
+        
+        for (product, quantity) in details {
+            total += quantity
+        }
+        
+        return total
+    }
+    
     init(details: [OrderDetail]) {
         self.details = details
     }

@@ -34,11 +34,9 @@ class WelcomeViewModel: NSObject {
         cell.priceLabel.text = product.price
         cell.imageBackgroundView.backgroundColor = UIColor.systemBlue
     }
-}
-
-extension WelcomeViewModel: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let product = products[indexPath.item]
+    
+    func addProductToOrder(at index: Int) {
+        let product = products[index]
         
         order.add(product: product)
     }
