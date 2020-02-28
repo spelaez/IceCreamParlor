@@ -22,6 +22,7 @@ class WelcomeViewController: UIViewController {
         productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
         
+        
         model = WelcomeViewModel()
         model.getProducts { [weak self] _ in
             DispatchQueue.main.async {
@@ -66,5 +67,4 @@ extension WelcomeViewController: UICollectionViewDataSource {
         
         return ProductCollectionViewCell()
     }
-    
 }

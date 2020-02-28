@@ -31,6 +31,6 @@ class WelcomeViewModel {
         cell.nameLabel.text = product.name
         cell.productImageView.image = UIImage(named: product.type)
         cell.priceLabel.text = product.price
-        cell.productImageView.backgroundColor = UIColor.systemBlue
+        cell.imageBackgroundView.backgroundColor = UIColor.systemBlue
     }
 }
