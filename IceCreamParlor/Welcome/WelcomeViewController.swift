@@ -21,12 +21,18 @@ class WelcomeViewController: UIViewController {
         productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
         
+        configureBar()
         
         model.getProducts { [weak self] _ in
             DispatchQueue.main.async {
                 self?.productsCollectionView.reloadData()
             }
         }
+    }
+    
+    func configureBar() {
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 111/255, green: 199/255, blue: 201/255, alpha: 1)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,7 +43,15 @@ class WelcomeViewController: UIViewController {
 
 extension WelcomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        model.addProductToOrder(at: indexPath.item)
+        let quantity = model.addProductToOrder(at: indexPath.item)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as? ProductCollectionViewCell
+        
+        if quantity == 0 {
+            cell?.resetBorder()
+        } else {
+            cell?.highlightBorder(with: quantity)
+        }
+        
         reviewOrderButton.setTitle("ORDER \(model.order.totalItems) ITEM(S)", for: .normal)
     }
 }
